@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+#team-inputs {
+  margin-bottom: 1rem;
+}
+
+#results {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+th {
+  background: #f0f0f0;
+  position: sticky;
+  top: 0;
+}
+
+.mult-0 { background: #000; color: #fff; }
+.mult-025, .mult-05 { background: #cce5ff; }
+.mult-1 { background: #eee; }
+.mult-2, .mult-4 { background: #f8d7da; }
