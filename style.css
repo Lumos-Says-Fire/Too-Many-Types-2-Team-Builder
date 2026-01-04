@@ -115,6 +115,7 @@ td {
   font-weight: 600;
 }
 
+.mult-0125,
 .mult-025,
 .mult-05 {
   background: var(--resist);
@@ -122,7 +123,8 @@ td {
 }
 
 .mult-2,
-.mult-4 {
+.mult-4,
+.mult-8 {
   background: var(--weak);
   color: var(--text-main);
 }
