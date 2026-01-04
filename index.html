@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TMT2 Team Type Analyzer</title>
+  <meta charset="UTF-8" />
+  <title>TMT2 Team Defense Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>TMT2 Team Type Analyzer</h1>
-  <p>If you can see this, GitHub Pages is working.</p>
+  <h1>TMT2 Team Defense Analyzer</h1>
+
+  <div id="team-inputs">
+    <input list="pokemon-list" placeholder="Pokémon 1">
+    <input list="pokemon-list" placeholder="Pokémon 2">
+    <input list="pokemon-list" placeholder="Pokémon 3">
+    <input list="pokemon-list" placeholder="Pokémon 4">
+    <input list="pokemon-list" placeholder="Pokémon 5">
+    <input list="pokemon-list" placeholder="Pokémon 6">
+    <button id="analyze">Analyze Team</button>
+  </div>
+
+  <datalist id="pokemon-list"></datalist>
+
+  <div id="results">
+    <div id="grid-container"></div>
+    <div id="summary-container"></div>
+  </div>
 
   <script src="script.js"></script>
+  <script src="ui.js"></script>
 </body>
 </html>
