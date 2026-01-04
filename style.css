@@ -118,13 +118,13 @@ td {
 .mult-025,
 .mult-05 {
   background: var(--resist);
-  color: var(--text-header);
+  color: var(--text-main);
 }
 
 .mult-2,
 .mult-4 {
   background: var(--weak);
-  color: var(--text-header);
+  color: var(--text-main);
 }
 
 /* =========================
