@@ -1,10 +1,13 @@
 :root {
-  --bg: #273e61;
+  --bg: #293359;
   --panel: #436291;
-  --border: #d1d5db;
-  --header: #1e304a;
+  --border: #273e61;
+  --header: #14253d;
+  --text-main: #000000;
+  --text-muted: #3b3b3b;
+  --text-header: #ffffff;
   --neutral: #f3f4f6;
-  --weak: #fee2e2;
+  --weak: #fccdcc;
   --resist: #d0fccc;
   --immune: #808080;
 }
@@ -14,10 +17,15 @@ body {
   background: var(--bg);
   margin: 0;
   padding: 1.5rem;
+  color: var(--text-main);
 }
 
 h1 {
   margin-bottom: 1rem;
+}
+
+input::placeholder {
+  color: var(--text-muted);
 }
 
 /* =========================
@@ -89,10 +97,12 @@ th, td {
 th {
   background: var(--header);
   font-weight: 600;
+  color: var(--text-header);
 }
 
 td {
   background: var(--neutral);
+  color: var(--text-main);
 }
 
 /* =========================
@@ -108,11 +118,13 @@ td {
 .mult-025,
 .mult-05 {
   background: var(--resist);
+  color: var(--text-header);
 }
 
 .mult-2,
 .mult-4 {
   background: var(--weak);
+  color: var(--text-header);
 }
 
 /* =========================
