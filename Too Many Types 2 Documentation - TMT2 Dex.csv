@@ -1,0 +1,470 @@
+Dex #,Name,Type 1,Type 2,Type 3
+1,Sprigatito,Grass,Cat,
+2,Floragato,Grass,Magic,Cat
+3,Meowscarada,Grass ,Magic,Furry
+4,Chimchar,Fire,Monke,
+5,Monferno,Fire,Monke,
+6,Infernape,Firefighting,Monke,Goku
+7,Froakie,Water,Frog,
+8,Frogadier,Water,Frog,Ninja
+9,Greninja,Water,Anime,Ninja
+10,Rattata,Rat,,
+11,Raticate,Hater,Rat,
+12,Pidove,Boring,Bird,
+13,Tranquill,Boring,Bird,
+14,Unfezant,Boring,Bird,
+15,Sewaddle,Silly,Bean,Bug
+16,Swadloon,Silly,Bean,Bug
+17,Leavanny,Silly,Bean,Bug
+18,Zigzagoon (Galar),Dark,Rat,
+19,Linoone   (Galar),Dark,Rat,
+20,Obstagoon (Galar),Sharp,Dark,Rat
+21,Pidgey,Bird,,
+22,Pidgeotto,Bird,Bird,
+23,Pidgeot,Bird,Bird,Bird
+24,Pichu,Baby,Pikachu,
+25,Pikachu,Pikachu,,
+26,Raichu,Future,Pikachu,
+27,Pawmi,Boring,Electric,Rat
+28,Pawmo,Boring,Electric,Rat
+29,Pawmot,Boring,Electric,Rat
+30,Tandemaus,Family,,
+31.1,Maushold,Family,Guys,
+31.2,Mega Maushold,Family,Guys,
+32,Shroodle,Poison,Rat,
+33,Grafaiai,Poison,Monke,Monke
+34,Joltik,Little,,
+35.1,Whismur,Little,Yapper,
+35.2,Mega Whismur,Little,Dragon,Yapper
+36,Loudred,Yapper,,
+37,Exploud,Yapper,,
+38,Lotad,Grass,Vibe,
+39,Lombre,Grass,Water,Vibe
+40,Ludicolo,Grass,Water,Dance
+41,Geodude,Boring,Ugly,Rock
+42,Graveler,Crab,Rock,
+43,Golem,Boring,Ugly,Rock
+44,Shinx,Electric,Dark,
+45,Luxio,Electric,Dark,
+46,Luxray,Electric,Dark,
+47,Exeggcute,Food,Guys,
+48,Exeggutor,Grass,Guys,
+49,Wimpod,Ugly,Little,Bug
+50,Golisopod,Bug,Kaiju,
+51,Krickitot,Bug,Song,
+52,Krickitune,Bug,Song,
+53,Ralts,Magic,Brat,
+54,Kirlia,Magic,Brat,
+55.1,Gardevoir,Magic,Brat,Gender
+55.2,Mega Gardevoir,Magic,Brat,Gender
+56.1,Gallade,Sharp,Brat,Gender
+56.2,Mega Gallade,Sharp,Brat,Gender
+57,Slakoth,Boring,Stinky,
+58,Vigaroth,Boring,Sharp,
+59,Slaking,Boring,Stinky,
+60.1,Sableye,Goblin,Gamer,
+60.2,Mega Sableye,Goblin,Gamer,Wealthy
+61,Mankey,Hater,Monke,
+62,Primeape,Hater,Monke,
+63.1,Annihilape,Unalive,Hater,Monke
+63.2,Mega Annihilape,Unalive,Hater,Monke
+64,Yoshi,Mario,Dragon,
+65,Birdo,Mario,Fairy,Gender
+66,Goomba,Little,Mario,
+67,Goombastak,Mario,Guys,
+68,Koopa Troopa,Normal,Mario,
+69,Paratroopa,Flying,Mario,
+70,Dry Bones,Unalive,Mario,
+71,Chain Chomp,Steel,Mario,
+72,Luma,Psychic,Space,Mario
+73,Frog,Mario,Frog,
+74,Moo Moo,Mario,Food,
+75,Tinkatink,Fairy,Steel,Hater
+76,Tinkatuff,Fairy,Steel,Hater
+77,Tinkaton,Fairy,Steel,Hater
+78,Rookidee,Flying,Bird,
+79,Corvisquire,Flying,Bird,
+80.1,Corviknight,Sharp,Flying,Bird
+80.2,Mega Corviknight (Gmax),Sharp,Flying,Bird
+81,Girafarig,Normal,Psychic,Guys
+82,Firagarif,Normal,Psychic,Guys
+83,Capsakid,Baby,Bean,
+84,Scovillain,Grass,Fire,Guys
+85,Foongus,Sus,,
+86,Amoongus,Sus,,
+87,Chatot,Yapper,Song,Bird
+88,Inkay,Silly,Psychic,
+89.1,Malamar,Dark,Uno Reverse,Psychic
+89.2,"Mega
+Malamar",Silly,Friend,Psychic
+90.1,Oricorio Baile,Fire ,Dance,Bird
+90.2,Oricorio Pa'u,Psychic,Dance,Bird
+90.3,Oricorio Pom ,Electric,Dance,Bird
+90.4,Oricorio Sensu,Ghost,Dance,Bird
+91,Corphish,Crab,,
+92.1,Crawdaunt,Dark,Crab,
+92.2,Mega Crawdaunt,Dark,Kaiju,Crab
+93,Bonsly,Baby,Sus,
+94,Sudowoodo,Sus,Rock,
+95,Machop,Little ,Stinky,Fighting
+96,Machoke,Stinky,Fighting,
+97.1,Machamp,Stinky,Fighting,Crab
+97.2,Mega Machamp,Stinky,Fighting,Crab
+98,Cleffa,Baby,Space,Fairy
+99,Clefairy,Dance,Space,Fairy
+100,Clefable,Dance,Space,Fairy
+101,Chikorita,Grass,Bean,
+102,Bayleef,Grass,Bean,
+103,Meganium,Grass,Bean,Fairy
+104,Fennekin,Fire,Magic,
+105,Braixen,Fire,Magic,Furry
+106,Delphox,Fire,Magic,Furry
+107,Popplio,Water,Silly,
+108,Brionne,Water,Silly,
+109,Primarina,Water,Silly,Song
+110,Eevee,Boring,Cat,
+111,Vapreon,Freak,Water,Cat
+112,Jolteon,Sharp,Electric,Cat
+113,Flareon,Fluffy,Fire,Cat
+114,Espeon,Psychic,Space,Cat
+115,Umbreon,Dark,Ninja,Cat
+116,Leafeon,Grass,Bean,Cat
+117,Glaceon,Ice,Brat,Cat
+118,Sylveon,Gender,Fairy,Cat
+119.1,Rotom,Electric,Thing,
+119.2,Rotom-Wash,Water,Thing,
+119.3,Rotom-Mow,Grass,Thing,
+119.4,Rotom-Heat,Fire,Thing,
+119.5,Rotom-Fan,Flying,Thing,
+119.6,Rotom-Frost,Ice,Thing,
+120,Spinda,Dance,,
+121,Unown,Holy,,
+122,Rhydon,Deez Nuts,,
+123,Cramorant,Silly,Water,Bird
+124,Zorua,Sus,Furry,
+125,Zoroark,Sus,Furry,Anime
+126,Oddish,Little ,Grass,Bean
+127,Gloom,Stinky,Grass,Bean
+128,Vileplume,Stinky,Grass,Bean
+129,Bellossom,Grass,Dance,
+130,Bunneary,Fluffy,,
+131,Lopunny,Fluffy,Furry,
+132,Hoppip,Holy,Friend,
+133,Skiploom,Holy,Friend,
+134,Jumpluff,Holy,Friend,
+135,Azurill,Baby,Gender,Ball
+136,Marill,Water,Gender,Ball
+137,Azumarill,Water,Gender,Ball
+138,Sandile,Florida,Ground,
+139,Krokorok,Florida,Ground,
+140,Krookodile,Florida,Ground,
+141,Magnemite,Electric,Baby,
+142,Magneton,Electric,Guys,
+143,Magnezone,Future,Electric,
+144,Oranguru,Psychic,Monke,
+145,Passimian,Monke,Ball,
+146,Flabebe,Baby,Fairy,
+147,Floette,Little ,Fairy,
+148,Florgess,Fairy,Girlboss,
+149,Slowpoke,Water,Vibe,
+150.1,Slowbro,Water,Vibe,
+150.2,Mega Slowbro,Gatekeep,Water,Vibe
+151,Slowking,Holy,Water,Vibe
+152,Stonjourner,Gatekeep,Rock,Guys
+153,Tauros,Normal,Food,
+154,Sandshrew,Ground,Friend,
+155,Sandslash,Sharp,Ground,Friend
+156,Buizel,Water,Fluffy,
+157,Floatzel,Water,Fluffy,
+158,Salandit,Poison,Fire,Rat
+159,Salazzle,Poison,Fire,Girlboss
+160,Purrloin,Dark,Cat,
+161,Liepard,Dark,Cat,
+162,Throh,Fighting,Stinky,
+163,Sawk,Fighting,Deez Nuts,
+164,Murkrow,Dark,Flying,VGC
+165,Honchkrow,Ugly ,Bird,
+166,Drampa,Normal,Hater,Dragon
+167,Elgyem,Future,Space,Freak
+168,Beheeyem,Future,Space,Freak
+169,Tyrogue,Little,Fighting,
+170,Hitmonlee,Fighting,Florida,
+171,Hitmonchan,Fighting,Gamer,
+172,Hitmontop,Fighting,Dance,
+173.1,Wishiwashi,Baby,Water,
+173.2,Wishiwashi (Schooling),Water,Guys,
+174,Teddiursa,Normal,Baby,
+175,Ursaring,Normal,Ground,Hater
+176.1,Ursaluna,Ancient,Normal,Ground
+176.2,Ursaluna (Blood Moon),Future,Normal,Ground
+177,Houndour,Little,Fire,Cat
+178,Houndoom,Fire,Cat,
+179,Furfrou,Fluffy,Wealth,
+180,Aron,Ancient,Steel,
+181,Lairon,Ancient,Steel,
+182.1,Aggron,Ancient,Steel,
+182.2,Mega Aggron,Ancient,Steel,
+183,Vulpix (Alola),Little,Ice,Cat
+184,Ninetails (Alola),Ice,Cat,
+185,Zubat,Boring,Poison,Flying
+186,Golbat,Flying,Poison,Freak
+187,Crobat,Flying,Poison,Freak
+188,Doduo,Bird,Guys,
+189,Dodrio,Bird,Guys,
+190,Wooper (Paldea),Stinky,Friend,
+191,Clodsire (Paldea),Stinky,Friend,
+192,Meowth,Wealth,Cat,
+193,Persian,Wealth,Cat,
+194,Crawbrawler,Fighting,Crab,
+195,Crabominable,Ugly,Ice,Crab
+196,Combee,Bug,Flying,Guys
+197,Vespiquen,Bug,Flying,Girlboss
+198,Aipom,Monke,,
+199,Ambipom,Monke,Crab,
+200,Bulbasaur,Grass,Anime,Frog
+201,Ivysaur,Grass,Poison,Frog
+202.1,Venusaur,Grass,Poison,Frog
+202.2,Mega Venusaur,Grass,Poison,Frog
+203,Charmander,Fire,Anime,
+204,Charmeleon,Fire,Boring,
+205.1,Charizard,Fire,Flying,Anime
+205.2,Mega Charizard X,Fire,Dragon,Anime
+205.3,Mega Charizard Y,Fire,Flying,Anime
+206,Squirtle,Water,Anime,
+207,Wartortle,Water,Boring,
+208.1,Blastoise,Water,Gun,
+208.2,Mega Blastoise,Steel,Water,Gun
+209.1,Absol,Sharp,Dark,
+209.2,Mega Absol,Sharp,Dark,Fairy
+210,Magikarp,Boring,Water,
+211.1,Gyarados,Water,Kaiju,
+211.2,Mega Gyarados,Dark,Water,Kaiju
+212,Farfetch'd (Galar),Food,Bird,
+213,Sirfetch'd,Wealth,Food,Bird
+214,Litwick,Fire,Ghost,Thing
+215,Lampent,Fire,Ghost,Thing
+216,Chandelure,Fire,Ghost,Thing
+217,Greavard,Unalive,Friend,
+218,Houndstone,Unalive,Friend,
+219,Growlithe,Fluffy,Fire,Friend
+220,Arcanine,Fluffy,Fire,Friend
+221,Gastly,Sus,Ghost,
+222,Haunter,Sus,Ghost,
+223.1,Gengar,Fast,Sus,Ghost
+223.2,Mega Gengar,Fast,Unalive,Ghost
+224,Snowrunt,Little,Ice,
+225,Glalie,Ice,Ball,
+226,Froslass,Ice,Brat,
+227.1,Incineroar,Fire,Dark,VGC
+227.2,Mega Incineroar,Fire,Dark,VGC
+228,Pyukumuku,Water,Bean,
+229,Diglett,Little,Ground,
+230,Dugtrio,Ground,Guys,
+231,Mr. Mime (Galar),Ice,Psychic,Dance
+232,Mr Rime,Ice,Psychic,Dance
+233,Squawkabilly,Boring,Ugly,Bird
+234,Nacli,Rock,Thing,
+235,Naclstack,Rock,Frog,Thing
+236,Garganacl,Rock,Kaiju,Thing
+237,Impidimp,Dark,Uno Reverse,Goblin
+238,Morgrem,Dark,Uno Reverse,Goblin
+239.1,Grimsnarl,Dark,Uno Reverse,Goblin
+239.2,Mega Grimsnarl (Gmax),Dark,Uno Reverse,Goblin
+240,Snom,Ice,Friend,
+241,Frosmoth,Ice,Magic,Friend
+242,Milcery,Fairy,Food,
+243.1,Alcremie,Fairy,Food,
+243.2,Mega Alcremie (Gmax),Fairy,Food,
+244,Paras,Hater,Bug,Crab
+245,Parasect,Ugly,Bug,Crab
+246,Gothita,Little,Psychic,Brat
+247,Gorthorita,Psychic,Brat,
+248,Gothitelle,Psychic,Brat,
+249,Sneasel,Ice,Dark,Ninja
+250,Weavile,Ice,Dark,Ninja
+251,Stufful,Fluffy,Gamer,
+252.1,Bewear,Fluffy,Fighting,Gamer
+252.2,Mega Bewear,Fluffy,Fighting,Gamer
+253,Trubbish,Stinky,Thing,
+254,Garbodor,Stinky,Thing,
+255,Eiscue,Ice,Thing,
+256,Voltorb,Fast,Electric,Ball
+257,Electrode,Fast,Ball,Electric
+258,Rufflet,Dark,Baby,Florida
+259,Braviary,Dark,Flying,Florida
+260.1,Kangaskhan,Family,,
+260.2,Mega Kangaskhan,VGC,Family,Guys
+261,Horsea,Water,Gun,
+262,Seadra,Water,Gun,
+263,Kingdra,Dragon,Water,Gun
+264,Nosepass,Rock,,
+265.1,Probopass,Rock,Steel,
+265.2,Mega Probopass,Rock,Steel,Mario
+266,Gulpin,Poison,Deez Nuts,
+267,Swalot,Poison,Deez Nuts,
+268,Grimer,Stinky,Poison,
+269,Muk,Stinky,Poison,
+270,Hatenna,Magic,Vibes,
+271,Hattrem,Magic,Vibes,
+272.1,Hatterene,Magic,Gender,Vibes
+272.2,Mega Hatterene (Gmax),Magic,Gender,Vibes
+273,Riolu,Furry,Friend,
+274.1,Lucario,Furry,Goku,Friend
+274.2,Mega Lucario,Holy,Furry,Goku
+275,Cottonee,Fluffy,Fairy,
+276,Whimsicott,Fluffy,Fairy,VGC
+277,Bounsweet,Gaslight,,
+278,Steenee,Gaslight,Gatekeep,
+279,Tsareena,Gaslight,Gatekeep,Girlboss
+280,Krabby,Crab,,
+281.1,Kingler,Crab,,
+281.2,Mega Kingler (Gmax),Crab,,
+282,Budew,Grass,Poison,Baby
+283,Roselia,Grass,Poison,Gender
+284,Roserade,Grass,Poison,Gender
+285,Poliwag,Baby,Frog,
+286,Polliwhirl,Frog,,
+287,Poliwrath,Hater,Frog,
+288,Politoed,Water,Frog,
+289,Charcadet,Baby,Ninja,Fire
+290,Amarouge,Psychic,Ninja,Fire
+291,Ceruledge,Ghost,Ninja,Fire
+292,Cyclizar,Fast,Dragon,Thing
+293,Applin,Dragon,Food,
+294.1,Flapple,Flying,Dragon,Food
+294.2,Mega Flapple (Gmax),Flying,Dragon,Food
+295.1,Appletun,Grass,Dragon,Food
+295.2,Mega Appletun (Gmax),Grass,Dragon,Food
+296,Dipplin,Dragon,Food,
+297.1,Hydrapple,Dragon,Food,Guys
+297.2,Mega Hydrapple,Dragon,Food,Guys
+298,Zangoose,Hater,,
+299,Seviper,Hater,,
+300,Treecko,Grass,Ninja,
+301,Grovyle,Grass,Ninja,
+302.1,Sceptile,Grass,Ninja,Kaiju
+302.2,Mega Sceptile,Grass,Ninja,Kaiju
+303,Torchic,Fire,Bird,
+304,Combusken,Firefighting,Bird,Food
+305.1,Blaziken,Firefighting,Bird,Food
+305.2,Mega Blaziken,Firefighting,Bird,Food
+306,Mudkip,Water,Reddit,
+307,Marshtomp,Water,Ground,Gamer
+308.1,Swampert,Water,Ground,Gamer
+308.2,Mega Swampert,Water,Ground,Gamer
+309,Varoom,Fast,Thing,
+310,Revavroom,Fast,Family,Thing
+311,Wynaut,Baby,Uno Reverse,
+312,Wobbufett,Psychic,Uno Reverse,
+313,Vanillite,Ice,Baby,Food
+314,Vanillish,Ice,Food,
+315,Vanilluxe,Ice,Food,Guys
+316.1,Ligmiblin,Goblin,Deez Nuts,Gaslight
+316.2,Mega Ligmiblin,Goblin,Deez Nuts,
+317,Basculin,Hater,Water,Food
+318,Basculegion,Hater,Unalive,Water
+319,Omanyte,Holy,Ancient,
+320,Omastar,Holy ,Ancient,
+321,Anorith,Ancient,Bug,
+322,Armaldo,Ancient,Crab,Bug
+323,Tyrunt,Ancient,Hater,
+324,Tyrantrum,Ancient,Hater,
+325,Chingling,Song,,
+326,Chimecho,Song,,
+327,Karrablast,Little,Ugly,Bug
+328,Escavalier,Sharp,Holy,Bug
+329,Shelmet,Little,Bug,Thing
+330,Accelgor,Fast,Ninja,Bug
+331,Porygon,Ancient,Gamer,
+332,Porygon2,Future,Gamer,
+333,Porygon-Z,???,Gamer,
+334,Swablu,Fluffy,Song,Flying
+335.1,Altaria,Fluffy,Song,Flying
+335.2,Mega Altaria,Fluffy,Song,Flying
+336,Honedge,Sharp,Ghost,
+337,Doublade,Sharp,Ghost,Guys
+338,Aegislash,Sharp,Ghost,
+339,Feebas,Water,Ugly,
+340,Milotic,Water,Gender,
+341,Mimikyu,Freak,Sus,Ghost
+342,Klefki,Thing,,
+343.1,Falinks,Silly,Little,Guys
+343.2,Mega Falinks,Silly,Guys,
+344,Genesect,Ancient,Future,Bug
+345,Nihilego,Anime,Space,Poison
+346,Buzzwole,Fighting,Space,Freak
+347,Pheromosa,Girlboss,Space,Brat
+348,Guzzlord,Crab,Space,Kaiju
+349,Stakataka,Steel,Space,Gatekeep
+350,Blacephalon,Fire,Space,Freak
+351,Gimmighoul,Little,Reddit,Wealth
+352,Gholdengo,VGC,Reddit,Wealth
+353,Kubfu,Little,VGC,
+354.1,Urshifu-Single,Fighting,Dark,VGC
+354.2,Urshifu-Rapid,Fighting,Water,VGC
+355,Duraludon,Gun,,
+356.1,Archaludon,Steel,Dragon,Gun
+356.2,Mega Archaludon,Anime,Dragon,Gun
+357.1,Meloetta,Song,Brat,
+357.2,Meloetta Pirouette,Dance,Brat,
+358,Dratini,Little,Dragon,Friend
+359,Dragonair,Dragon,Friend,
+360,Dragonite,Dragon,Kaiju,Friend
+360.1,"Mega
+Dragonite",Dragon,Kaiju,Friend
+361,Bagon,Ancient,Dragon,
+362,Shelgon,Ancient,Dragon,
+363.1,Salamence,Ancient,Dragon,Flying
+363.2,Mega Salamence,Ancient,Dragon,Flying
+364,Beldum,Steel,Space,
+365,Metang,Steel,Space,Guys
+366.1,Metagross,Steel,Space,Guys
+366.2,Mega Metagross,Space,Crab,Guys
+367,Dreepy,Gun,Ghost,Baby
+368,Drakloak,Gun,Ghost,Guys
+369,Dragapult,Gun,Ghost,Guys
+370,Celebi,Magic,Future,Grass
+371,Flutter Mane,Ancient,VGC,Fairy
+372,Slither Wing,Ancient,Bug,Friend
+373,Scream Tail,Ancient,Song,Yapper
+374.1,Roaring Moon,Ancient,Dark,Kaiju
+374.2,Mega Roaring Moon,Ancient,Dragon,Kaiju
+375,Iron Bundle,Future,Ball,Thing
+376,Iron Hands,Future,VGC,Electric
+377,Iron Thorns,Future,Rock,Kaiju
+378.1,Iron Valiant,Future,Sharp,Gender
+378.2,Mega Iron Valiant,Future,Sharp,Gender
+379,MissingNo.,Bird,Normal,
+380,Meltan,Little,Thing,
+381,Melmetal,Steel,Thing,
+382,Shaymin,Grass,Friend,
+383,Sans,Sans,,
+384.1,Tornadus,Holy,Flying,VGC
+384.2,Tornadus Therian,Holy,Flying,Hater
+385.1,Thundurus,Holy,Electric,VGC
+385.2,Thundurs Therian,Holy,Electric,Hater
+386.1,Landorus,Holy,Ground,Hater
+386.2,Landorus Therian,Holy,Ground,VGC
+387.1,Enamorus,Holy,Fairy,Girlboss
+387.2,Enamorus Therian,Holy,Fairy,Crab
+388,Regisus,Sus,,
+389,Regifur,Furry,,
+390,Regigame,Gamer,,
+391,Groudon,Ground,Hater,
+392,Kyogre,Water,Hater,
+393.1,Rayquaza,Emerald,,
+393.2,Mega Rayquaza,Holy,Emerald,
+394,Jirachi,Space,Song,Friend
+395.1,Deoxys,Space,Crab,
+395.2,Mega Deoxys,Space,Crab,
+396.1,Diancie,Sharp,Wealth,Rock
+396.2,Mega Diancie,Sharp,Wealth,Girlboss
+397.1,Terapagos ,Every,Single ,Type
+397.2,Terapagos (Terastal Form),Every,Single ,Type
+397.3,Mega Terapagos (Stellar Form),Every,Single ,Type
+398,Arceus,Holy,Holy,
+,,,,
+,Uncatchable:,,,
+,Petey Piranha,Silly,Mario,Grass
+,King Bob-omb,Holy,Mario,Firefighting
+,Gooper Blooper,Stinky,Mario,Water
