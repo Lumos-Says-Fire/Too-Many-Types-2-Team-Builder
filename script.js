@@ -4,9 +4,10 @@ const TYPE_CHART_URL = "Too Many Types 2 Documentation - Type Chart.csv";
 /* =========================
    HELPERS
    ========================= */
-function norm(s) {
-  if (s === undefined || s === null) return null;
-  return String(s)
+
+function norm(value) {
+  if (value === null || value === undefined) return null;
+  return String(value)
     .replace(/\r/g, "")
     .replace(/\n/g, "")
     .trim()
@@ -20,16 +21,15 @@ function parseCSV(text) {
 }
 
 async function loadCSV(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to load ${url}`);
-  }
-  return await response.text();
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to load ${url}`);
+  return await res.text();
 }
 
 /* =========================
    INIT
    ========================= */
+
 async function init() {
   const dexText = await loadCSV(DEX_URL);
   const chartText = await loadCSV(TYPE_CHART_URL);
@@ -38,17 +38,16 @@ async function init() {
   const chartRows = parseCSV(chartText);
 
   /* =========================
-     BUILD POKEMON_TYPES
+     POKEMON TYPES
      ========================= */
 
-  const header = dexRows[0].map(h => h.trim());
-  const nameIdx = header.indexOf("Name");
+  const dexHeader = dexRows[0];
+  const nameCol = dexHeader.indexOf("Name");
 
-  // Collect ALL type columns (Type 1, Type 2, Type 3, ...)
-  const typeIndices = [];
-  header.forEach((h, i) => {
-    if (h.startsWith("Type")) {
-      typeIndices.push(i);
+  const typeCols = [];
+  dexHeader.forEach((h, i) => {
+    if (h && h.startsWith("Type")) {
+      typeCols.push(i);
     }
   });
 
@@ -56,16 +55,16 @@ async function init() {
 
   for (let i = 1; i < dexRows.length; i++) {
     const row = dexRows[i];
-    const name = norm(row[nameIdx]);
+    const name = norm(row[nameCol]);
     if (!name) continue;
 
     const types = [];
-    for (const idx of typeIndices) {
-      const t = norm(row[idx]);
+    for (const col of typeCols) {
+      const t = norm(row[col]);
       if (t) types.push(t);
     }
 
-    if (types.length > 0) {
+    if (types.length) {
       POKEMON_TYPES[name] = types;
     }
   }
@@ -74,19 +73,26 @@ async function init() {
   console.log("Sample Pokémon:", Object.entries(POKEMON_TYPES).slice(0, 3));
 
   /* =========================
-     BUILD TYPE_CHART
+     TYPE CHART
      ========================= */
 
-  // Defenders: row 2, columns C–CD (indexes 2–81)
+  // ---- DEFENDERS ----
+  // Row 2 (index 1), starting at column C (index 2)
   const defendingTypes = [];
-  for (let col = 2; col <= 81; col++) {
-    const name = norm(chartRows[1][col]);
-    if (name) defendingTypes.push(name);
+  let col = 2;
+
+  while (col < chartRows[1].length) {
+    const raw = chartRows[1][col];
+    const name = norm(raw);
+    if (!name) break; // defender list ends here
+    defendingTypes.push(name);
+    col++;
   }
 
-  // Attackers: column B, rows 3–82 (indexes 2–81)
+  // ---- ATTACKERS ----
+  // Column B (index 1), rows 3–82 (indexes 2–81 inclusive)
   const attackingTypes = [];
-  for (let row = 2; row <= 81; row++) {
+  for (let row = 2; row <= 81 && row < chartRows.length; row++) {
     const name = norm(chartRows[row][1]);
     if (name) attackingTypes.push(name);
   }
@@ -98,8 +104,9 @@ async function init() {
     TYPE_CHART[atk] = {};
 
     for (let d = 0; d < defendingTypes.length; d++) {
-      const cell = chartRows[a + 2][d + 2];
+      const cell = chartRows[a + 2]?.[d + 2];
       const val = parseFloat(cell);
+
       if (!Number.isFinite(val)) continue;
       if (val !== 1) {
         TYPE_CHART[atk][defendingTypes[d]] = val;
@@ -111,6 +118,7 @@ async function init() {
   console.log("Loaded defending types:", defendingTypes.length);
   console.log("FIRE sample:", TYPE_CHART["FIRE"]);
 
+  // Expose for UI
   window.POKEMON_TYPES = POKEMON_TYPES;
   window.TYPE_CHART = TYPE_CHART;
 }
