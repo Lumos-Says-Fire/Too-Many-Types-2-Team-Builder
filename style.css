@@ -80,6 +80,17 @@ input::placeholder {
 /* =========================
    TABLES
    ========================= */
+.team-good {
+  background: var(--resist);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.team-bad {
+  background: var(--weak);
+  color: var(--text-main);
+  font-weight: 600;
+}
 
 table {
   background: var(--panel);
