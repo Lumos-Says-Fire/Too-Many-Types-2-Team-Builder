@@ -64,7 +64,7 @@ input::placeholder {
   font-weight: 500;
   white-space: nowrap;
   display: none;
-  min-width: 120px;
+  min-width: 200px;
 }
 
 #team-inputs button {
