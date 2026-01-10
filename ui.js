@@ -22,23 +22,44 @@ function updateTypeDisplay(input, typeDisplay) {
   }
 }
 
+function updateAbilityCheckbox(input, abilityDiv) {
+  const pokemonName = input.value.trim().toUpperCase();
+  const ability = POKEMON_ABILITIES[pokemonName];
+  
+  if (ability) {
+    abilityDiv.innerHTML = `
+      <label>
+        <input type="checkbox" data-pokemon="${pokemonName}">
+        Has ${ability.name}
+      </label>
+    `;
+    abilityDiv.classList.add("visible");
+  } else {
+    abilityDiv.innerHTML = "";
+    abilityDiv.classList.remove("visible");
+  }
+}
+
 function setupTypeDisplays() {
   const rows = document.querySelectorAll(".pokemon-input-row");
-  rows.forEach(row => {
+  rows.forEach((row, index) => {
     const input = row.querySelector("input");
     const typeDisplay = row.querySelector(".type-display");
+    const abilityDiv = document.querySelectorAll(".ability-checkbox")[index];
     
     input.addEventListener("input", () => {
       updateTypeDisplay(input, typeDisplay);
+      updateAbilityCheckbox(input, abilityDiv);
     });
     
     input.addEventListener("blur", () => {
       updateTypeDisplay(input, typeDisplay);
+      updateAbilityCheckbox(input, abilityDiv);
     });
   });
 }
 
-function getMultiplier(attacking, defendingTypes) {
+function getMultiplier(attacking, defendingTypes, pokemonName, hasAbility) {
   // Check if UNO REVERSE is in the types
   const hasUnoReverse = defendingTypes.includes("UNO REVERSE");
   
@@ -54,6 +75,29 @@ function getMultiplier(attacking, defendingTypes) {
   // If UNO REVERSE is present, invert the multiplier (except 0 and 1)
   if (hasUnoReverse && mult !== 0 && mult !== 1) {
     mult = 1 / mult;
+  }
+  
+  // Apply ability effects if checkbox is checked
+  if (hasAbility && POKEMON_ABILITIES[pokemonName]) {
+    const ability = POKEMON_ABILITIES[pokemonName];
+    
+    // Handle immunity
+    if (ability.immuneType && attacking === ability.immuneType) {
+      mult = 0;
+    }
+    
+    // Handle special instructions
+    if (ability.instruction) {
+      if (ability.instruction.includes("Multiply Fire")) {
+        if (attacking === "FIRE") {
+          mult *= 1.25;
+        }
+      } else if (ability.instruction.includes("Multiply weaknesses")) {
+        if (mult > 1) {
+          mult *= 0.75;
+        }
+      }
+    }
   }
   
   return mult;
@@ -72,16 +116,30 @@ function multClass(m) {
 }
 
 function analyzeTeam() {
-  const inputs = Array.from(document.querySelectorAll("#team-inputs input"));
-  const team = inputs
-    .map(i => i.value.trim().toUpperCase())
-    .filter(n => POKEMON_TYPES[n]);
+  const rows = document.querySelectorAll(".pokemon-input-row");
+  const team = [];
+  
+  rows.forEach((row, index) => {
+    const input = row.querySelector("input");
+    const pokemonName = input.value.trim().toUpperCase();
+    
+    if (POKEMON_TYPES[pokemonName]) {
+      const abilityDiv = document.querySelectorAll(".ability-checkbox")[index];
+      const checkbox = abilityDiv.querySelector("input[type='checkbox']");
+      const hasAbility = checkbox ? checkbox.checked : false;
+      
+      team.push({
+        name: pokemonName,
+        hasAbility: hasAbility
+      });
+    }
+  });
 
   const attackers = Object.keys(TYPE_CHART).sort();
 
   const grid = document.createElement("table");
   const header = document.createElement("tr");
-  header.innerHTML = `<th>Attack</th>` + team.map(p => `<th>${p}</th>`).join("");
+  header.innerHTML = `<th>Attack</th>` + team.map(p => `<th>${p.name}</th>`).join("");
   grid.appendChild(header);
 
   const summary = document.createElement("table");
@@ -93,7 +151,7 @@ function analyzeTeam() {
     row.innerHTML = `<th>${atk}</th>`;
 
     team.forEach(p => {
-      const m = getMultiplier(atk, POKEMON_TYPES[p]);
+      const m = getMultiplier(atk, POKEMON_TYPES[p.name], p.name, p.hasAbility);
       if (m === 0) immune++;
       else if (m > 1) weak++;
       else if (m < 1) resist++;
@@ -136,7 +194,7 @@ function analyzeTeam() {
 document.getElementById("analyze").addEventListener("click", analyzeTeam);
 
 const waitForData = setInterval(() => {
-  if (window.POKEMON_TYPES && window.TYPE_CHART) {
+  if (window.POKEMON_TYPES && window.TYPE_CHART && window.POKEMON_ABILITIES) {
     clearInterval(waitForData);
     buildDatalist();
     setupTypeDisplays();
