@@ -105,14 +105,13 @@ function getMultiplier(attacking, defendingTypes, pokemonName, hasAbility) {
 
 function multClass(m) {
   if (m === 0) return "mult-0";
-  if (m === 0.125) return "mult-0125";
-  if (m === 0.25) return "mult-025";
-  if (m === 0.5) return "mult-05";
+  if (m < 0.25) return "mult-0125";
+  if (m < 0.5) return "mult-025";
+  if (m < 1) return "mult-05";
   if (m === 1) return "mult-1";
-  if (m === 2) return "mult-2";
-  if (m === 4) return "mult-4";
-  if (m >= 8) return "mult-8";
-  return "";
+  if (m < 4) return "mult-2";
+  if (m < 8) return "mult-4";
+  return "mult-8";
 }
 
 function analyzeTeam() {
