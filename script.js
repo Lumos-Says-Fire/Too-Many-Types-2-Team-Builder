@@ -1,5 +1,6 @@
 const DEX_URL = "Too Many Types 2 Documentation - TMT2 Dex.csv";
 const TYPE_CHART_URL = "Too Many Types 2 Documentation - Type Chart.csv";
+const ABILITIES_URL = "Too Many Types 2 Documentation - Abilities.csv";
 
 /* =========================
    HELPERS
@@ -31,6 +32,7 @@ async function loadCSV(url) {
 async function init() {
   const dexRows = await loadCSV(DEX_URL);
   const chartRows = await loadCSV(TYPE_CHART_URL);
+  const abilityRows = await loadCSV(ABILITIES_URL);
 
   /* =========================
      POKEMON TYPES
@@ -108,8 +110,33 @@ async function init() {
   console.log("Loaded defending types:", defendingTypes.length);
   console.log("FIRE sample:", TYPE_CHART["FIRE"]);
 
+  /* =========================
+     ABILITIES
+     ========================= */
+
+  const POKEMON_ABILITIES = {};
+
+  for (let i = 0; i < abilityRows.length; i++) {
+    const row = abilityRows[i];
+    const pokemonName = norm(row[0]);
+    const abilityName = row[1]?.trim();
+    const immuneType = norm(row[2]);
+    const extraInstruction = row[3]?.trim();
+
+    if (!pokemonName || !abilityName) continue;
+
+    POKEMON_ABILITIES[pokemonName] = {
+      name: abilityName,
+      immuneType: immuneType || null,
+      instruction: extraInstruction || null
+    };
+  }
+
+  console.log("Loaded abilities:", Object.keys(POKEMON_ABILITIES).length);
+
   window.POKEMON_TYPES = POKEMON_TYPES;
   window.TYPE_CHART = TYPE_CHART;
+  window.POKEMON_ABILITIES = POKEMON_ABILITIES;
 }
 
 /* =========================
