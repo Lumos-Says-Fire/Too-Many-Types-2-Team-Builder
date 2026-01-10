@@ -95,8 +95,7 @@ Dex #,Name,Type 1,Type 2,Type 3
 87,Chatot,Yapper,Song,Bird
 88,Inkay,Silly,Psychic,
 89.1,Malamar,Dark,Uno Reverse,Psychic
-89.2,"Mega
-Malamar",Silly,Friend,Psychic
+89.2,"Mega Malamar",Silly,Friend,Psychic
 90.1,Oricorio Baile,Fire ,Dance,Bird
 90.2,Oricorio Pa'u,Psychic,Dance,Bird
 90.3,Oricorio Pom ,Electric,Dance,Bird
@@ -410,8 +409,7 @@ Malamar",Silly,Friend,Psychic
 358,Dratini,Little,Dragon,Friend
 359,Dragonair,Dragon,Friend,
 360,Dragonite,Dragon,Kaiju,Friend
-360.1,"Mega
-Dragonite",Dragon,Kaiju,Friend
+360.1,"Mega Dragonite",Dragon,Kaiju,Friend
 361,Bagon,Ancient,Dragon,
 362,Shelgon,Ancient,Dragon,
 363.1,Salamence,Ancient,Dragon,Flying
@@ -467,4 +465,5 @@ Dragonite",Dragon,Kaiju,Friend
 ,Uncatchable:,,,
 ,Petey Piranha,Silly,Mario,Grass
 ,King Bob-omb,Holy,Mario,Firefighting
+
 ,Gooper Blooper,Stinky,Mario,Water
