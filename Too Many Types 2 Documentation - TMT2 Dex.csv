@@ -32,15 +32,15 @@ Dex #,Name,Type 1,Type 2,Type 3
 31.1,Maushold,Family,Guys,
 31.2,Mega Maushold,Family,Guys,
 32,Shroodle,Poison,Rat,
-33,Grafaiai,Poison,Monke,Monke
+33,Grafaiai,Poison,Monke,Ball
 34,Joltik,Little,,
 35.1,Whismur,Little,Yapper,
 35.2,Mega Whismur,Little,Dragon,Yapper
 36,Loudred,Yapper,,
-37,Exploud,Yapper,,
+37,Exploud,Ugly,Yapper,
 38,Lotad,Grass,Vibe,
 39,Lombre,Grass,Water,Vibe
-40,Ludicolo,Grass,Water,Dance
+40,Ludicolo,Grass,Water,Vibe
 41,Geodude,Boring,Ugly,Rock
 42,Graveler,Crab,Rock,
 43,Golem,Boring,Ugly,Rock
@@ -122,7 +122,7 @@ Dex #,Name,Type 1,Type 2,Type 3
 108,Brionne,Water,Silly,
 109,Primarina,Water,Silly,Song
 110,Eevee,Boring,Cat,
-111,Vapreon,Freak,Water,Cat
+111,Vaporeon,Freak,Water,Cat
 112,Jolteon,Sharp,Electric,Cat
 113,Flareon,Fluffy,Fire,Cat
 114,Espeon,Psychic,Space,Cat
@@ -467,3 +467,4 @@ Dex #,Name,Type 1,Type 2,Type 3
 ,King Bob-omb,Holy,Mario,Firefighting
 
 ,Gooper Blooper,Stinky,Mario,Water
+
