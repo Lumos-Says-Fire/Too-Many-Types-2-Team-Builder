@@ -277,7 +277,7 @@ Dex #,Name,Type 1,Type 2,Type 3
 244,Paras,Hater,Bug,Crab
 245,Parasect,Ugly,Bug,Crab
 246,Gothita,Little,Psychic,Brat
-247,Gorthorita,Psychic,Brat,
+247,Gothorita,Psychic,Brat,
 248,Gothitelle,Psychic,Brat,
 249,Sneasel,Ice,Dark,Ninja
 250,Weavile,Ice,Dark,Ninja
@@ -467,4 +467,5 @@ Dex #,Name,Type 1,Type 2,Type 3
 ,King Bob-omb,Holy,Mario,Firefighting
 
 ,Gooper Blooper,Stinky,Mario,Water
+
 
